@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test Admin Panel</title>
+  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+  <link rel="stylesheet" href="../assets/css/updated-style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+    #personal_information,
+    #company_information {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <aside class="left-sidebar">
+      <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+          <a href="#" class="text-nowrap logo-img">
+            <h1>Admin Panel</h1>
+          </a>
+          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+            <i class="ti ti-x fs-8"></i>
+          </div>
+        </div>
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          <ul id="sidebarnav">
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Home</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#" aria-expanded="false">
+                <span>
+                  <i class="ti ti-file-description"></i>
+                </span>
+                <span class="hide-menu">Test Multi Step Forms</span>
+              </a>
+            </li>
+        </nav>
+      </div>
+    </aside>
+    <div class="body-wrapper">
+      <header class="app-header">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+
+            <li class="nav-item dropdown" style="margin-left: 20px;">
+              <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="../assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
+              </a>
+              <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2" style="left: 0px;">
+                <div class="message-body">
+                  <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                    <i class="ti ti-user fs-6"></i>
+                    <p class="mb-0 fs-3">My Profile</p>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                    <i class="ti ti-mail fs-6"></i>
+                    <p class="mb-0 fs-3">My Account</p>
+                  </a>
+                  <a href="#" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item d-block d-xl-none">
+                <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                  <i class="ti ti-menu-2"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+                  <i class="ti ti-bell-ringing"></i>
+                  <div class="notification bg-primary rounded-circle"></div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="javascript:void(0)">
+                <button class="btn btn-primary">Job Post</button>
+              </a>
+              </li>
+            </ul>
+            
+          </div>
+        </nav>
+      </header>
+      <div class="container-fluid">
+       
+          <div class="card">
+            <div class="card-body">
+              <div class="mb-3">
+                <img src="https://amymhaddad.s3.amazonaws.com/morocco-blue.png" class="card-img-top" alt="..." height="200px">
+                <div class="">
+                  <img src="../assets/images/profile/user-1.jpg" alt="" width="120" height="120" class="rounded-circle" style="position: absolute; top:150px; left: 80px;">
+                </div>
+              </div>
+              <form class="form-horizontal pt-5" action="" method="POST" id="myform">
+
+                <fieldset id="account_information" class="">
+                  <legend class="heading fw-bold text-black">Personal information</legend>
+                  
+                  <div class="form-group d-flex gap-2">
+                    <div class="col-lg-6">
+                      <label for="firstname" class="col-lg-6 control-label fw-bold text-black pb-2">First Name</label>
+                      <input type="text" class="form-control" id="" name="firstname" placeholder="First Name">
+                    </div>
+                    <div class="col-lg-6">
+                      <label for="lastname" class="col-lg-6 control-label pb-2 fw-bold text-black">Last Name</label>
+                      <input type="text" class="form-control" id="" name="lastname" placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="form-group d-flex gap-2">
+                    <div class="col-lg-6">
+                      <label for="email" class="col-lg-6 control-label pb-2 pt-2 fw-bold text-black">Email</label>
+                      <input type="text" class="form-control" name="email" id="emailinput" placeholder="Email">
+                    </div>
+                    <div class="col-lg-6">
+                      <label for="contactno" class="col-lg-6 control-label pb-2 pt-2 fw-bold text-black">Mobile
+                        Number</label>
+                      <input type="number" class="form-control" id="" name="contactno" placeholder="Mobile Number">
+                    </div>
+                  </div>
+                  <div class="form-group  gap-2">
+                    <div class="col-lg-12">
+                      <label for="address" class="col-lg-12 control-label pb-2 pt-2 fw-bold text-black">Address</label>
+                      <input type="text" class="form-control" id="" name="address" placeholder="Address">
+                    </div>
+                  </div>
+                  <div class="form-group d-flex gap-2">
+                    <div class="col-lg-6">
+                      <label class="col-md-6 pb-2 pt-2 fw-bold text-black">City</label>
+                      <select class="form-control" id="" name="city">
+                        <option value="">...select...</option>
+                        <option value="1">Madhubani</option>
+                        <option value="2">Darbhanga</option>
+                        <option value="3">Patna</option>
+                        <option value="4">Saharsa</option>
+                        <option value="5">Madhepura</option>
+                        <option value="6">Betia</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-6">
+                      <label class="col-md-6 pb-2 pt-2 fw-bold text-black">State</label>
+                      <select class="form-control" id="" name="state">
+                        <option value="">...select...</option>
+                        <option value="1">Bihar</option>
+                        <option value="2">Jharkhand</option>
+                        <option value="3">Panjab</option>
+                        <option value="4">Delhi</option>
+                        <option value="5">Rajasthan</option>
+                        <option value="6">Madhya Pradesh</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group d-flex gap-2">
+                    <div class="col-lg-6">
+                      <label class="col-md-6 pb-2 pt-2 fw-bold text-black">Country</label>
+                      <select class="form-control" id="" name="country">
+                        <option value="">...select...</option>
+                        <option value="1">India</option>
+                        <option value="2">USA</option>
+                        <option value="3">UK</option>
+                        <option value="4">Russia</option>
+                        <option value="5">NewJeland</option>
+                        <option value="6">Itely</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-6">
+                      <label for="zipcode" class="col-lg-6 control-label pb-2 pt-2 fw-bold text-black">Zip Code</label>
+                      <input type="number" class="form-control" id="" name="zipcode" placeholder="Zipcode">
+                    </div>
+                  </div>
+                  <div class="form-group d-flex gap-2">
+                    <div class="col-lg-6">
+                      <label class="col-md-6 pb-2 pt-2 fw-bold text-black">Gender</label>
+                      <select class="form-control" id="" name="gender">
+                        <option value="">...select...</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">TransGender</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-6">
+                      <label class="col-md-6 pb-2 pt-2 fw-bold text-black">Date Of Birth</label>
+                      <input type="datetime-local" class="form-control" name="dob" />
+                    </div>
+                  </div>
+                  <div class="form-group  gap-2">
+                    <div class="col-lg-12">
+                      <label class="col-md-6 pb-2 pt-2 fw-bold text-black">Language</label>
+                      <select class="form-control" name="language" id="">
+                        <option value="">...select...</option>
+                        <option value="1">Hindi</option>
+                        <option value="2">English</option>
+                        <option value="3">Maithili</option>
+                        <option value="4">Urdu</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-end pt-3 gap-2">
+                    <p><a class="btn btn-primary next">Save Changes</a></p>
+                  </div>
+                </fieldset>
+
+
+                <fieldset id="company_information" class="">
+                  <legend class="heading fw-bold text-black">Company information</legend>
+                  <div class="flex-row">
+                  </div>
+                  <div class="form-group d-flex gap-2">
+                    <div class="col-lg-6">
+                      <label for="companyname" class="col-lg-6 control-label fw-bold text-black pb-2">Company Name</label>
+                      <input type="text" class="form-control" id="" name="companyname" placeholder="Company Name">
+                    </div>
+                    <div class="col-lg-6">
+                      <label for="designation" class="col-lg-6 control-label pb-2 fw-bold text-black">Designation</label>
+                      <input type="text" class="form-control" id="" name="designation" placeholder="Designation">
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-end pt-3 gap-2">
+                    <p><a class="btn btn-primary next">Save Changes</a></p>
+                  </div>
+                </fieldset>
+
+                <fieldset id="personal_information" class="">
+                  <legend class="heading fw-bold text-black">Personal information</legend>
+                  <div class="flex-row">
+                  </div>
+                  <div class="form-group d-flex gap-2">
+                    <div class="col-lg-6">
+                      <label for="hometown" class="col-lg-6 control-label fw-bold text-black pb-2">Home Town</label>
+                      <input type="text" class="form-control" id="" name="firstname" placeholder="Home Town">
+                    </div>
+                    <div class="col-lg-6">
+                      <label for="pincode" class="col-lg-6 control-label pb-2 fw-bold text-black">Pincode</label>
+                      <input type="number" class="form-control" id="" name="pincode" placeholder="Pincode">
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-end pt-3 gap-2">
+                    <p><a class="btn btn-primary" id="previous">Previous</a></p>
+                  <p><input class="btn btn-success" type="submit" value="submit"></p>
+                  </div>
+                  
+                </fieldset>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+    
+    </div>
+  </div>
+  </div>
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript"
+    src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.js"></script>
+  <script type="text/javascript"
+    src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/additional-methods.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/sidebarmenu.js"></script>
+  <script type="text/javascript" src="./stepform.js"></script>
+</body>
+
+</html>
