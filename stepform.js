@@ -5,7 +5,7 @@ $(document).ready(function () {
         return this.optional(element) || /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/i.test(value);
     }, "please provide valid email address");
 
-    $(".next").click(function () {
+    $(".next").click(function formsubmit () {
         var form = $("#myform");
         form.validate({
             errorElement: 'span',
