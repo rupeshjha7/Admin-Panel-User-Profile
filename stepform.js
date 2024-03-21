@@ -19,7 +19,6 @@ $(document).ready(function () {
             rules: {
                 firstname: {
                     required: true,
-                    firstnameRegex: true,
                     minlength: 6,
                 },
                 lastname: {
